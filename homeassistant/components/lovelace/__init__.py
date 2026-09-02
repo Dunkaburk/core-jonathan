@@ -118,6 +118,7 @@ class LovelaceData:
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
     """Set up the Lovelace commands."""
+    _LOGGER.info("Lovelace setup started. Note from DAT266 Group 4!")
     mode = config[DOMAIN][CONF_MODE]
     yaml_resources = config[DOMAIN].get(CONF_RESOURCES)
 
